@@ -17,7 +17,9 @@ class CombineArrays {
 let array1  = [11, 22,33];
 let array2  = [1, 2,3];
 
+// create an object for the class to access methods contained
 let comb = new CombineArrays();
+
 let combined:number[] = comb.combine(array1, array2);
 // print out the array containing the two combined array
 console.log(combined.toString());
