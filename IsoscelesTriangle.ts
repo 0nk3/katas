@@ -1,25 +1,23 @@
-/* ************************************* *
- * @author : Ndumiso Onke Fanti          *
- * Exercise : Find the longest String    *
- *************************************** */
-class Longest {
-    longestString(longest: string[]): number {
-        let temp: string = "";
-        for (let word of longest) {
-            if (temp.length < word.length) {
-                temp = word;
-            }
+/* **************************************** *
+ * @author : Ndumiso Onke Fanti             *
+ * Exercise : Draw an Isosceles Triangle    *
+ * **************************************** */
+function isosceles(n : number) {
+    let str:string = "";
+    //This is the upper part of the isosceles triangle
+    for (let rows:number = 1; rows <= n; rows++){
+        for (let j:number = n + 1; j >= rows; j--){ //dealing with the trailing spaces
+            str+=" ";
         }
-        return temp.length;
+        //dealing with trailing spaces
+        let hashes:string = "";
+        // printing out the '#'s, numbers of hashes per row is is always odd
+        for (let k:number = 1; k <= 2*rows -1 ; k++){
+            hashes+="#";
+        }
+        console.log(str +hashes)
+        str = "";
+        //console.log(" ")
     }
 }
-let long = new Longest();
-
-// change the array below to test for a different input
-let arr:string[] = ["the","quick","brown", "fox", "ate", "my", "chickens"];
-
-for (let word of arr) {
-    if (word.length === long.longestString(arr)){
-        console.log(word);
-    }
-}
+isosceles(5);

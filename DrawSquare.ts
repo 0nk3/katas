@@ -8,7 +8,7 @@ function square(size:number) {
         for (let j: number = 0; j < size; j++) {
             out += " # ";
         }
-        out+="\n";
+        out+="\n";  // after appending '#' j times, I must add a new line and go to it
     }
     console.log(out);
 }
