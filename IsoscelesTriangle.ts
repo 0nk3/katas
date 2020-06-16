@@ -4,7 +4,7 @@
  * **************************************** */
  class IsoscelesTriangle {
       isosceles(n : number) {
-         let str:string = "";
+          let str:string = "";
          //This is the upper part of the isosceles triangle
          for (let rows:number = 1; rows <= n; rows++){
              for (let j:number = n + 1; j >= rows; j--){ //dealing with the trailing spaces
@@ -22,5 +22,6 @@
          }
      }
 }
+
 let iso = new IsoscelesTriangle();
 iso.isosceles(4);
