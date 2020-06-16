@@ -1,5 +1,7 @@
-console.log("Exercise : Draw a square\n");
-
+/* ******************************
+ * @author : Ndumiso Onke Fanti *
+ * Exercise : Draw a square     *
+ * **************************** */
 function square(size:number) {
     let out:string  = "";
     for (let i: number = 0; i < size; i++) {

@@ -1,4 +1,7 @@
-console.log("Exercise : Check if a number is even\n");
+/* **************************************
+ * @author : Ndumiso Onke Fanti         *
+ * Exercise : check if a number is even *
+ * ************************************ */
 function evenOrOdd(num:number):string {
     if(num%2===0){
         return "even";  // zero is an even number by definition

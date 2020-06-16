@@ -1,4 +1,7 @@
-console.log("Exercise : Draw a right handed triangle\n");
+/* ********************************************
+ * @author : Ndumiso Onke Fanti               *
+ * Exercise : Draw a right handed triangle    *
+ * ****************************************** */
 function triangle(size:number) {
     let output:string = "";
     for (let i:number = 0; i <= size; i++){
