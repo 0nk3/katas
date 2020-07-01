@@ -1,10 +1,15 @@
 # katas
 Basic Katas in TypeScript
 
-#install
+##install
+npm package manager
 TypeScript Compiler
-Node
+Nodejs ,javascript runtime enviroment
 
-#run
+
+##run
 tsc <filename.ts>    
 node <filename.js> 
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
