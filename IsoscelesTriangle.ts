@@ -23,5 +23,5 @@
      }
 }
 
-let iso = new IsoscelesTriangle();
+const iso = new IsoscelesTriangle();
 iso.isosceles(4);
