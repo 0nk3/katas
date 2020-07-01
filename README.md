@@ -1,13 +1,13 @@
 # katas
 Basic Katas in TypeScript
 
-##install
+## install
 npm package manager.
 TypeScript Compiler.
 Nodejs ,javascript runtime enviroment.
 
 
-##run
+## run
 tsc <filename.ts>.  
 node <filename.js>.
 
