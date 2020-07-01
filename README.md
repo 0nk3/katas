@@ -4,7 +4,7 @@ Basic Katas in TypeScript
 ## install
 npm package manager.
 TypeScript Compiler.
-Nodejs ,javascript runtime enviroment.
+Nodejs
 
 
 ## run
