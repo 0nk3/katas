@@ -1,14 +1,23 @@
-console.log("Exercise : Draw a square\n");
-function square(size) {
-    var out = "";
-    for (var i = 0; i < size; i++) {
-        for (var j = 0; j < size; j++) {
-            out += " # ";
-        }
-        out += "\n";
+/* ******************************
+ * @author : Ndumiso Onke Fanti *
+ * Exercise : Draw a square     *
+ * **************************** */
+var Square = /** @class */ (function () {
+    function Square() {
     }
-    console.log(out);
-}
-square(2);
+    Square.prototype.square = function (size) {
+        var out = "";
+        for (var i = 0; i < size; i++) {
+            for (var j = 0; j < size; j++) {
+                out += " # ";
+            }
+            out += "\n"; // after appending '#' j times, I must add a new line and go to it
+        }
+        console.log(out);
+    };
+    return Square;
+}());
+var sqObj = new Square();
+sqObj.square(2);
 console.log();
-square(4);
+sqObj.square(4);

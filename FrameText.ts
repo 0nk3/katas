@@ -4,14 +4,15 @@ import {Longest} from './LongestString';
  * Exercise : Frame Text                   *
  ***************************************** */
 class FrameText{
-
+    // computation of spaces needed after each word
     space(L: number, word: string): number{
         return L - word.length;
     }
 
     private maxsize: number = 0;
     frame(words: string[]) {
-        const L = Longest.longestString(words); // longest word length
+        const L = Longest.longestString(words); // computation of the longest word given an array
+        
         let spaces: string = "";
         for (const argument of words) {
             if(argument.length > this.maxsize){
@@ -30,16 +31,12 @@ class FrameText{
         for (let j = 0; j < words.length; j++) {
             let wordLength = this.space(L, words[j]);
             for (let i: number = 0; i < wordLength; i++){
-                spaces += "_";
+                spaces += " ";
             }
             temp1 = temp1 + "* " + words[j] + spaces + " *\n"; // start  with a * and a space before a word
             spaces = "";
-           //TODO : dealing with the spaces
-            // for (let i = words[j].length; i <= this.maxsize-1; i++) {
-            //     spaces+= "+";
-            // }
         }
-        console.log(temp0); //good
+        console.log(temp0); 
         console.log(temp1 +temp0);
     }
 }

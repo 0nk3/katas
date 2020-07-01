@@ -18,7 +18,6 @@
              }
              console.log(str +hashes)
              str = "";
-             //console.log(" ")
          }
      }
 }

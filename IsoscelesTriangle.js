@@ -20,7 +20,6 @@ var IsoscelesTriangle = /** @class */ (function () {
             }
             console.log(str + hashes);
             str = "";
-            //console.log(" ")
         }
     };
     return IsoscelesTriangle;
